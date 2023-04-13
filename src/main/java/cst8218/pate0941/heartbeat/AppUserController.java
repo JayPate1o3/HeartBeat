@@ -27,7 +27,7 @@ public class AppUserController implements Serializable {
     @EJB private cst8218.pate0941.heartbeat.AppUserFacade ejbFacade;
     private PaginationHelper pagination;
     private int selectedItemIndex;
-
+    
     public AppUserController() {
     }
 

@@ -5,7 +5,9 @@ import cst8218.pate0941.heartbeat.util.JsfUtil;
 import cst8218.pate0941.heartbeat.util.PaginationHelper;
 
 import java.io.Serializable;
+import java.util.Locale;
 import java.util.ResourceBundle;
+import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
@@ -27,10 +29,24 @@ public class HeartController implements Serializable {
     private cst8218.pate0941.heartbeat.HeartFacade ejbFacade;
     private PaginationHelper pagination;
     private int selectedItemIndex;
-
+    private Locale locale;
+    
     public HeartController() {
     }
-
+    @PostConstruct
+    public void init() {
+    locale = FacesContext.getCurrentInstance().getExternalContext().getRequestLocale();
+    }
+    public Locale getLocale() {
+    return locale;
+    }
+    public String getLanguage() {
+    return locale.getLanguage();
+    }
+    public void setLanguage(String language) {
+    locale = new Locale(language);
+    FacesContext.getCurrentInstance().getViewRoot().setLocale(locale);
+    }
     public Heart getSelected() {
         if (current == null) {
             current = new Heart();

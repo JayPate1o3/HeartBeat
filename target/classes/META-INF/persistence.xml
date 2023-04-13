@@ -3,7 +3,6 @@
   <persistence-unit name="my_persistence_unit" transaction-type="JTA">
     <jta-data-source>java:comp/DefaultDataSource</jta-data-source>
     <class>cst8218.pate0941.heartbeat.entity.Heart</class>
-     <jta-data-source>java:comp/DefaultDataSource</jta-data-source>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sun-appserv-samples"/>
       <property name="javax.persistence.jdbc.user" value=""/>
