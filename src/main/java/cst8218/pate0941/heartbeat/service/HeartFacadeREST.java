@@ -8,6 +8,8 @@ package cst8218.pate0941.heartbeat.service;
 import cst8218.pate0941.heartbeat.entity.Heart;
 import java.util.List;
 import java.util.Objects;
+import javax.annotation.security.DeclareRoles;
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -27,6 +29,8 @@ import javax.ws.rs.core.Response;
  * @author Jay Patel
  */
 @Stateless
+@DeclareRoles({"admin","ApiGroup"})
+@RolesAllowed({"admin","ApiGroup"})
 @Path("cst8218.pate0941.heartbeat.heart")
 public class HeartFacadeREST extends AbstractFacade<Heart> {
 
