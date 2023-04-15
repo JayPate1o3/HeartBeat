@@ -1,0 +1,191 @@
+{
+  "id": "832e70dc-1eed-4102-931f-7c357ba787cd",
+  "version": "2.0",
+  "name": "HeartBeatTesting1",
+  "url": "http://localhost:8080/heartbeat-jay/",
+  "tests": [{
+    "id": "a9e8e28a-043c-4d24-a9c1-f6fd8156f15a",
+    "name": "HeartEntityCreation",
+    "commands": [{
+      "id": "3ce560fb-6527-4a9a-88c8-e6d3b9451fa2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/heartbeat-jay/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "956441e6-be51-4c9e-a904-ec3f1c1ff05d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1302x751",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cafcd48-e13b-426e-84c4-7ad87ff1ef39",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Heart Items",
+      "targets": [
+        ["linkText=Show All Heart Items", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Heart Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/heartbeat-jay/faces/heart/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Heart Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9516fc35-2dfc-46bf-840d-70671a79cabf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Heart",
+      "targets": [
+        ["linkText=Create New Heart", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Heart')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt48':'j_idt11:j_idt48'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[19]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Heart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e5b4f9-adc3-4469-9f08-48286ae41770",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:beatCount",
+      "targets": [
+        ["id=j_idt12:beatCount", "id"],
+        ["name=j_idt12:beatCount", "name"],
+        ["css=#j_idt12\\3A beatCount", "css:finder"],
+        ["xpath=//input[@id='j_idt12:beatCount']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a63030f-fe85-40dc-a130-f681a1a48f9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:beatCount",
+      "targets": [
+        ["id=j_idt12:beatCount", "id"],
+        ["name=j_idt12:beatCount", "name"],
+        ["css=#j_idt12\\3A beatCount", "css:finder"],
+        ["xpath=//input[@id='j_idt12:beatCount']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "999f11b5-65ba-4c6f-ad55-aaacdd67c9ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:x",
+      "targets": [
+        ["id=j_idt12:x", "id"],
+        ["name=j_idt12:x", "name"],
+        ["css=#j_idt12\\3Ax", "css:finder"],
+        ["xpath=//input[@id='j_idt12:x']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3487f5e5-63af-44b8-ade3-f3a4a9414c3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:x",
+      "targets": [
+        ["id=j_idt12:x", "id"],
+        ["name=j_idt12:x", "name"],
+        ["css=#j_idt12\\3Ax", "css:finder"],
+        ["xpath=//input[@id='j_idt12:x']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "45"
+    }, {
+      "id": "0f2d20cd-cd10-49c1-b007-39193c403ab5",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:y",
+      "targets": [
+        ["id=j_idt12:y", "id"],
+        ["name=j_idt12:y", "name"],
+        ["css=#j_idt12\\3Ay", "css:finder"],
+        ["xpath=//input[@id='j_idt12:y']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "67"
+    }, {
+      "id": "7d13d33b-a7e5-46a3-b64a-7bf239fb9027",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:size",
+      "targets": [
+        ["id=j_idt12:size", "id"],
+        ["name=j_idt12:size", "name"],
+        ["css=#j_idt12\\3Asize", "css:finder"],
+        ["xpath=//input[@id='j_idt12:size']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66a927cb-5e2a-4289-8f68-99a727c6e625",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:size",
+      "targets": [
+        ["id=j_idt12:size", "id"],
+        ["name=j_idt12:size", "name"],
+        ["css=#j_idt12\\3Asize", "css:finder"],
+        ["xpath=//input[@id='j_idt12:size']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "70"
+    }, {
+      "id": "835687c6-6e7f-4529-b2ee-506671fdafa3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt20':'j_idt12:j_idt20'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea01a6d-68f5-4f20-beb2-7aca187af2be",
+      "comment": "Heart was successfully created",
+      "command": "assertNotText",
+      "target": "css=table:nth-child(1) td",
+      "targets": [
+        ["css=table:nth-child(1) td", "css:finder"],
+        ["xpath=//div[@id='messagePanel']/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Heart was successfully created.')]", "xpath:innerText"]
+      ],
+      "value": "Heart was successfully created"
+    }]
+  }],
+  "suites": [{
+    "id": "05593d77-0ccd-4e17-977d-de0bdd73f1fe",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9e8e28a-043c-4d24-a9c1-f6fd8156f15a"]
+  }],
+  "urls": ["http://localhost:8080/heartbeat-jay/"],
+  "plugins": []
+}
